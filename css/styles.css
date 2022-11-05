@@ -1,0 +1,119 @@
+p,
+ul,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+* {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+input {
+    margin: 0;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* =================container====================== */
+
+@media screen and (min-width:320px) {
+        
+        .container {
+                margin: 0 auto;
+                padding: 0 15px;
+                width: 320px;
+        }
+}
+
+    @media screen and (min-width: 768px) {
+    
+        .container{ 
+                width: 768px;
+    }
+}
+
+    @media screen and (min-width: 1024px) {
+        .container {
+                width: 1024px;
+            }
+}
+
+
+/* ========================header=================== */
+
+.header {
+    height: 200px;
+    background-color:peru
+}
+
+/* ========================main====================== */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.gallery__item {
+    margin-right: 30px;
+    margin-bottom: 30px;;
+    height: 200px;
+    background-color: blue;
+    flex-basis: calc(33.33% - 30px);
+    transform: scale(1);
+    font-size: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.gallery__item:hover {
+    transform: scale(1.1);
+}
+
+/* ========================footer==================== */
+
+.footer {
+
+    outline: 1px solid tomato;
+    background-color: darkgray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+        /* position: absolute;
+            bottom: 0;
+            left: 0; */
+}
+
+.footer__container {
+    display: flex;
+        justify-content: center;
+}
+.footer__title{
+    font-size: 36px;
+    color: black;
+    text-transform: uppercase;
+}
