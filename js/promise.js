@@ -19,7 +19,7 @@ promise.then(
   }
 );
 
-console.log(promise);
+// console.log(promise);
 
 /**
  * =======промісіфікація функцій============
@@ -34,3 +34,19 @@ const getFetchById = (id) => {
 getFetchById(5).then((pokemon) => console.log(pokemon));
 getFetchById(8).then((pokemon) => console.log(pokemon));
 getFetchById(9).then((pokemon) => console.log(pokemon));
+
+const makePromise = () => {
+  return new Promise((resolve, reject) => {
+    const passed = Math.random() > 0.5;
+    if (passed) {
+      resolve("💙💛");
+    }
+
+    reject("💥");
+  });
+};
+
+makePromise()
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error))
+  .finally(() => console.log("The end"));
