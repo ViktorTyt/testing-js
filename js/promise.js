@@ -50,3 +50,20 @@ makePromise()
   .then((result) => console.log(result))
   .catch((error) => console.log(error))
   .finally(() => console.log("The end"));
+
+const arr = [3, 1, 2, 4, 5, 8, 7];
+const iterator = arr.keys(arr);
+
+for (const el of iterator) {
+  console.log(el);
+}
+
+const foo = async () => {
+  await Promise.resolve("Rejected");
+  return "Ok";
+};
+
+foo().then(
+  (resolve) => console.log(resolve),
+  (reject) => console.log(reject)
+);
