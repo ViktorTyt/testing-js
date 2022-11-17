@@ -67,3 +67,13 @@ foo().then(
   (resolve) => console.log(resolve),
   (reject) => console.log(reject)
 );
+
+function factorial(x) {
+  if (x < 0) return;
+  if (x === 0) return 1;
+  return x * factorial(x - 1);
+}
+
+console.log(factorial(1)); // 1
+console.log(factorial(3)); // 6
+console.log(factorial(5)); // 24
