@@ -16,10 +16,11 @@ const createArray = (object = {}, options = []) => {
   let arrForRender = [];
 
   for (let index = 0; index < options.length; index++) {
-    Object.entries(object).find((item) => {
+    Object.entries(object).map((item) => {
       if (item[0] === options[index]) {
         arrForRender.push(item);
       }
+       return item;
     });
   }
 
