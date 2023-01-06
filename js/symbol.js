@@ -31,3 +31,25 @@ let user = {
 };
 
 console.log(user);
+
+// console.log(Object.is(NaN));
+// console.log(Object.is(null));
+// console.log(Number.isNaN(5 * "r"));
+// console.log(0 === false);
+
+var x = "10";
+var y = "9";
+
+console.log(x < y);
+
+const arr = [10, 20, 30, 40, 50];
+
+for (const iterator of arr.values()) {
+  console.log(iterator * 5);
+}
+
+const f = (x) => {
+  return x * 2;
+};
+
+console.log(f(3));
